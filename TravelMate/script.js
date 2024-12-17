@@ -84,7 +84,7 @@ const data = {
  "Laoag": {
   touristSpots: [
     { name: "La Paz Sand Dunes", image: "img/La.jpg", img: "img/sLa.png" },
-    { name: "Aurora Park", image: "img/park.jpg", img: "img/sPark.png" },
+    { name: "Aurora Park", image: "img/Park.jpg", img: "img/sPark.png" },
     { name: "Sinking Bell Tower", image: "img/Bell.jpg", img: "img/sBell.png" },
     { name: "Saint William the Hermit Cathedral", image: "img/Saint.jpg", img: "img/sSaint.png" },
     { name: "Museo Ilocos Norte", image: "img/Museo.jpg", img: "img/sMuseo.png" }
