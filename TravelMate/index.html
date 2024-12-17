@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelMate - Ilocos Norte</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sign-In Page -->
+  <div class="sign-in" id="sign-in">
+    <h1>Welcome to TravelMate</h1>
+    <p>Enter your name to get started:</p>
+    <input type="text" id="user-name" placeholder="Your Name">
+    <button id="start-button">Start</button>
+  </div>
+
+  <!-- Greeting Page -->
+  <div class="greeting" id="greeting">
+    <h1 id="greeting-message"></h1>
+    <button id="proceed-button">Proceed to Explore</button>
+  </div>
+
+  <!-- Main TravelMate Content -->
+  <div class="main-content" id="main-content">
+    <h1>Explore Ilocos Norte</h1>
+    <ul class="municipality-list" id="municipality-list"></ul>
+    <div id="info-section" style="display: none;">
+      <h2 id="municipality-name"></h2>
+      <div id="image-container"></div> <!-- Image will be inserted here -->
+      <h2>Tourist Spots</h2>
+      <ul id="tourist-spots-list"></ul><br>
+      <ul id="touristSpotsList"></ul>
+
+      <h2>Hotels</h2>
+      <ul id="hotels-list"></ul>
+      <ul id="hotels"></ul>
+      <h2>restaurants</h2>
+      <ul id="restaurants-list"></ul>
+      <ul id="restaurants"></ul>
+      <button id="back-button">Back</button>
+    </div>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

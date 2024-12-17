@@ -1,0 +1,182 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('path_to_your_image.jpg'); /* Use the appropriate path for your image */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .img{
+    width: 500px;
+    height: auto;
+  }
+  /* Sign-In Page */
+  .sign-in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .sign-in h1 {
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .sign-in input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+  }
+  
+  .sign-in button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .sign-in button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Greeting Page */
+  .greeting {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .greeting h1 {
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .greeting button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .greeting button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Main Content */
+  .main-content {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 20px;
+    background-image: url('path_to_your_image.jpg'); /* Add the same background image if you want it here too */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Municipality List (5x5 grid) */
+  .municipality-list {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Ensures 5 columns */
+    gap: 20px; /* Adds spacing between the buttons */
+    justify-items: center; /* Centers the buttons in each cell */
+    margin-top: 20px;
+  }
+  
+  /* Style for each municipality button */
+  .municipality-list li {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    width: 100%; /* Ensures buttons are responsive */
+    max-width: 200px; /* Limits the button width */
+  }
+  
+  /* Button hover effect */
+  .municipality-list li:hover {
+    transform: translateY(-5px);
+    background-color: #f0f0f0;
+  }
+  
+  /* Info Section */
+  .info-section {
+    display: none;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-section h2 {
+    color: #007bff;
+  }
+  
+  #tourist-spots-list, #hotels-list, #restaurants-list {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  #back-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  #back-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* For smaller screens (tablets and mobile phones) */
+  @media (max-width: 768px) {
+    .municipality-list {
+      grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+  }
+  
+  /* For very small screens (mobile phones) */
+  @media (max-width: 480px) {
+    .municipality-list {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+  }
+  
